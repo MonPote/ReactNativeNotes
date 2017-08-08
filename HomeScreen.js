@@ -7,10 +7,12 @@ export default class HomeScreen extends React.Component {
     title: 'Welcome',
   };
   render() {
+    
     const { navigate } = this.props.navigation;
+    console.log(navigate);
     return (
       <Button
-        title="Go to Jane's profile"
+        title="Go to Note"
         onPress={() =>
           navigate('Profile', { name: 'Jane' })
         }
